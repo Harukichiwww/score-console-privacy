@@ -2,146 +2,264 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Score Console 野球・ソフトボール スコアボード プライバシーポリシー">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Score Console 野球・ソフトボール スコアボードのプライバシーポリシー。ユーザーデータ、AdMob広告、PRO機能、アプリ内購入、Google Play Billing等の取り扱いについて説明します。"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://harukichiwww.github.io/score-console-privacy/"
+  >
+
+  <meta
+    property="og:title"
+    content="プライバシーポリシー | Score Console"
+  >
+
+  <meta
+    property="og:description"
+    content="Score Console 野球・ソフトボール スコアボードのプライバシーポリシー"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://harukichiwww.github.io/score-console-privacy/"
+  >
+
   <title>プライバシーポリシー | Score Console</title>
 
   <style>
+    :root {
+      --primary: #2196f3;
+      --primary-dark: #1976d2;
+      --text: #222222;
+      --subtext: #555555;
+      --muted: #777777;
+      --border: #e5e5e5;
+      --background: #ffffff;
+      --section-bg: #f7f9fc;
+      --note-border: #d9eaff;
+      --link: #1976d2;
+    }
+
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
       font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
         "Yu Gothic",
+        "YuGothic",
         "Meiryo",
         sans-serif;
-      line-height: 1.8;
-      color: #222;
-      background: #f5f7fa;
+      line-height: 1.85;
+      -webkit-text-size-adjust: 100%;
     }
 
-    .container {
-      max-width: 900px;
+    main {
+      width: min(920px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 48px 24px 80px;
+      padding: 48px 0 72px;
     }
 
-    .header {
-      margin-bottom: 40px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid #ddd;
+    header {
+      margin-bottom: 36px;
     }
 
     h1 {
-      margin: 0 0 12px;
+      margin: 0 0 8px;
       font-size: 2rem;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
     }
 
     .app-name {
-      color: #555;
-      font-size: 1.05rem;
+      margin: 0 0 5px;
+      color: var(--subtext);
+      font-size: 1rem;
+      font-weight: 600;
     }
 
     .updated {
-      margin-top: 8px;
-      color: #777;
+      margin: 0;
+      color: var(--muted);
       font-size: 0.9rem;
+    }
+
+    .intro {
+      margin-bottom: 38px;
+      padding: 22px 24px;
+      background: var(--section-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
     }
 
     section {
-      background: #fff;
-      margin-bottom: 20px;
-      padding: 28px 32px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      margin: 0 0 34px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
     }
 
     h2 {
-      margin-top: 0;
+      margin: 0 0 16px;
       font-size: 1.3rem;
+      line-height: 1.55;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
     }
 
     ul {
-      padding-left: 24px;
+      margin: 10px 0 16px;
+      padding-left: 1.6em;
+    }
+
+    li {
+      margin: 5px 0;
     }
 
     a {
-      color: #1565c0;
-      word-break: break-all;
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      overflow-wrap: anywhere;
     }
 
-    .footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #777;
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .note {
+      margin: 18px 0;
+      padding: 17px 19px;
+      background: var(--section-bg);
+      border: 1px solid var(--note-border);
+      border-radius: 10px;
+    }
+
+    .note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .service-list {
+      margin-top: 14px;
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
       font-size: 0.9rem;
+      text-align: center;
     }
 
-    @media (prefers-color-scheme: dark) {
-      body {
-        color: #e8e8e8;
-        background: #101214;
+    @media (max-width: 600px) {
+      main {
+        width: min(100% - 24px, 920px);
+        padding-top: 30px;
+        padding-bottom: 50px;
       }
 
-      section {
-        background: #191c1f;
-        box-shadow: none;
+      h1 {
+        font-size: 1.65rem;
       }
 
-      .header {
-        border-bottom-color: #333;
+      h2 {
+        font-size: 1.18rem;
       }
 
-      .app-name,
-      .updated,
-      .footer {
-        color: #aaa;
-      }
-
-      a {
-        color: #64b5f6;
+      .intro {
+        padding: 18px;
       }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
+  <main>
 
-    <header class="header">
+    <header>
       <h1>プライバシーポリシー</h1>
-      <div class="app-name">
+
+      <p class="app-name">
         Score Console 野球・ソフトボール スコアボード
-      </div>
-      <div class="updated">
-        最終更新日：2026年8月26日
-      </div>
+      </p>
+
+      <p class="updated">
+        最終更新日：2026年8月31日
+      </p>
     </header>
 
-    <section>
+
+    <div class="intro">
       <p>
         「Score Console 野球・ソフトボール スコアボード」
-        （以下「本アプリ」といいます）は、ユーザーのプライバシーを尊重し、
-        ユーザー情報を適切に取り扱うことを重要な方針としています。
+        （以下「本アプリ」といいます）は、
+        ユーザーのプライバシーを尊重し、
+        ユーザーに関する情報を適切に取り扱うことを
+        重要な方針としています。
       </p>
 
       <p>
-        本プライバシーポリシーでは、本アプリにおける情報の取得、
-        利用、共有、保存および削除について説明します。
+        本プライバシーポリシーでは、
+        本アプリにおける情報の取得、利用、共有、
+        保存、削除、広告、アプリ内購入その他の
+        データの取り扱いについて説明します。
       </p>
-    </section>
+    </div>
+
 
     <section>
       <h2>1. 運営者情報</h2>
 
       <p>
-        アプリ名：Score Console 野球・ソフトボール スコアボード
+        アプリ名：
+        Score Console 野球・ソフトボール スコアボード
       </p>
 
       <p>
@@ -156,275 +274,720 @@
       </p>
     </section>
 
+
     <section>
       <h2>2. 本アプリで取り扱うデータ</h2>
 
       <p>
-        本アプリでは、野球・ソフトボールの試合管理、
-        スコア記録、オーダー管理などの機能を提供します。
+        本アプリでは、
+        野球・ソフトボールの試合管理、
+        スコア記録、オーダー管理、
+        選手管理、選手成績管理、
+        タイマーその他の関連機能を提供します。
       </p>
 
       <p>
-        ユーザーが本アプリ内で入力する以下のような情報は、
+        ユーザーが本アプリ内で入力または作成する
+        以下のような情報は、
         原則としてユーザーの端末内で処理・保存されます。
       </p>
 
       <ul>
         <li>試合情報</li>
+        <li>試合日時</li>
+        <li>球場名</li>
         <li>チーム情報</li>
         <li>選手名</li>
+        <li>背番号</li>
+        <li>選手に関する各種登録情報</li>
         <li>オーダー情報</li>
-        <li>スコアおよび試合記録</li>
-        <li>その他、ユーザーが本アプリ内で入力したデータ</li>
+        <li>打順情報</li>
+        <li>スコア</li>
+        <li>イニングごとの得点記録</li>
+        <li>打席結果</li>
+        <li>投手成績</li>
+        <li>打撃成績</li>
+        <li>選手成績</li>
+        <li>試合履歴</li>
+        <li>ユーザーが入力したメモ等</li>
+        <li>タイマー設定</li>
+        <li>スコアボード設定</li>
+        <li>その他、本アプリの設定情報</li>
+        <li>その他、ユーザーが本アプリ内で入力・作成したデータ</li>
       </ul>
 
       <p>
-        これらのデータを、NEIDSが管理するサーバーへ
-        自動的に送信または保存することはありません。
+        これらの主要なアプリデータを、
+        NEIDSが管理する外部サーバーへ
+        自動的にアップロードまたは保存することはありません。
       </p>
+
+      <div class="note">
+        <p>
+          ただし、広告配信やGoogle Playによる
+          アプリ内購入などに使用する第三者サービスについては、
+          各サービスの提供に必要な情報が
+          当該サービス提供者によって取得、処理または
+          共有される場合があります。
+        </p>
+      </div>
     </section>
+
 
     <section>
       <h2>3. QRコードによるデータ共有</h2>
 
       <p>
-        本アプリでは、作成したオーダー情報などをQRコードとして表示し、
-        別の端末で読み取ることでデータを共有できる機能を提供します。
+        本アプリでは、
+        作成したオーダー情報その他の対応データを
+        QRコードとして表示し、
+        別の端末で読み取ることにより
+        データを共有できる機能を提供する場合があります。
       </p>
 
       <p>
-        QRコードには共有対象となるデータそのものが含まれます。
+        QRコードには、
+        共有対象となる情報そのものが
+        含まれる場合があります。
       </p>
 
       <p>
-        QRコードを利用したデータ共有はユーザー自身の操作によって行われ、
-        共有されたデータがNEIDSの管理するサーバーを経由することはありません。
+        QRコードによる共有は、
+        ユーザー自身の操作によって実行されます。
       </p>
 
       <p>
-        QRコードを第三者に提示した場合、その第三者がQRコード内の情報を
-        読み取る可能性があります。QRコードの共有範囲については、
+        QRコードに含まれるデータを
+        NEIDSが管理するサーバーへ
+        自動的に送信することはありません。
+      </p>
+
+      <p>
+        QRコードを第三者に表示、
+        撮影、送信または共有した場合、
+        その第三者がQRコードに含まれる情報を
+        読み取る可能性があります。
+      </p>
+
+      <p>
+        QRコードの管理および共有範囲については、
         ユーザー自身で適切に管理してください。
       </p>
     </section>
+
 
     <section>
       <h2>4. カメラの利用</h2>
 
       <p>
-        本アプリは、QRコードを読み取る目的で
+        本アプリは、
+        QRコードを読み取る目的で
         端末のカメラへのアクセスを求める場合があります。
       </p>
 
       <p>
-        カメラはQRコードの読み取りに使用されます。
-        QRコード読み取りのために取得したカメラ映像を、
-        NEIDSの管理するサーバーへ送信することはありません。
+        カメラから取得された映像は、
+        QRコードを認識するために使用されます。
+      </p>
+
+      <p>
+        QRコード読み取りのために取得した
+        カメラ映像そのものを、
+        NEIDSが管理する外部サーバーへ
+        自動送信または保存することはありません。
       </p>
     </section>
+
 
     <section>
       <h2>5. 広告について</h2>
 
       <p>
-        本アプリでは、広告配信のためにGoogle LLCが提供する
-        Google AdMobおよびGoogle Mobile Ads SDKを使用します。
+        本アプリでは、
+        広告配信のためにGoogle LLCが提供する
+        Google AdMobおよび
+        Google Mobile Ads SDKを使用します。
       </p>
 
       <p>
-        Google Mobile Ads SDKは、広告配信、広告効果の測定、
-        分析、不正行為の防止、セキュリティおよびコンプライアンス等の目的で、
-        以下のような情報を自動的に取得または共有する場合があります。
+        本アプリでは、
+        以下のような広告形式を表示する場合があります。
+      </p>
+
+      <ul>
+        <li>バナー広告</li>
+        <li>アダプティブバナー広告</li>
+        <li>インライン広告</li>
+        <li>インタースティシャル広告</li>
+        <li>リワード広告</li>
+        <li>その他、Google AdMobが提供する対応広告形式</li>
+      </ul>
+
+      <p>
+        広告の表示内容、表示頻度および広告形式は、
+        アプリのバージョンや利用状況等に応じて
+        変更される場合があります。
+      </p>
+
+      <h3>リワード広告について</h3>
+
+      <p>
+        本アプリでは、
+        ユーザーが任意で広告の視聴を選択することにより、
+        一部のPRO機能等を一定時間利用できる
+        リワード広告を提供する場合があります。
+      </p>
+
+      <p>
+        リワード広告による機能解放は
+        一時的なものであり、
+        解放時間、対象機能その他の条件は
+        アプリ内に表示される内容に従います。
+      </p>
+
+      <p>
+        Google Mobile Ads SDKは、
+        広告配信、広告効果の測定、
+        分析、不正行為防止、
+        セキュリティおよび
+        コンプライアンス等の目的で、
+        以下のような情報を自動的に取得、
+        処理または共有する場合があります。
       </p>
 
       <ul>
         <li>IPアドレス</li>
         <li>広告IDなどのデバイス識別子</li>
-        <li>アプリや広告に対する操作情報</li>
-        <li>アプリやSDKのパフォーマンスおよび診断情報</li>
+        <li>App Set ID等の識別子</li>
+        <li>アプリに対する操作情報</li>
+        <li>広告に対する操作情報</li>
+        <li>アプリの起動に関する情報</li>
+        <li>タップ等のインタラクション情報</li>
+        <li>広告動画等の視聴に関する情報</li>
+        <li>アプリおよびSDKの診断情報</li>
+        <li>アプリおよびSDKのパフォーマンスに関する情報</li>
         <li>端末またはアプリに関連する識別情報</li>
-        <li>IPアドレスなどから推定されるおおよその地域情報</li>
+        <li>IPアドレス等から推定されるおおよその地域情報</li>
       </ul>
 
       <p>
-        これらの情報はGoogleのサービスによって処理される場合があります。
+        これらの情報は、
+        Googleのサービス提供に必要な範囲で
+        Googleまたはそのサービスパートナーによって
+        処理または共有される場合があります。
       </p>
 
       <p>
         Googleによる情報の取り扱いについては、
-        <a href="https://policies.google.com/privacy"
-           target="_blank"
-           rel="noopener noreferrer">
+        以下をご確認ください。
+      </p>
+
+      <p>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Google プライバシーポリシー
         </a>
-        をご確認ください。
       </p>
     </section>
 
+
     <section>
-      <h2>6. 広告ID</h2>
+      <h2>6. 広告IDその他の識別子</h2>
 
       <p>
-        本アプリでは、Google Mobile Ads SDKを通じて
-        Androidの広告IDを使用する場合があります。
+        本アプリでは、
+        Google Mobile Ads SDKを通じて、
+        Androidの広告IDその他の識別子を
+        使用する場合があります。
       </p>
 
       <p>
-        広告IDは、広告配信、広告効果測定、分析、
-        不正行為防止などの目的で利用される場合があります。
+        これらの識別子は、
+        広告配信、広告効果測定、
+        分析、不正行為防止、
+        セキュリティ等の目的で
+        使用される場合があります。
       </p>
 
       <p>
-        ユーザーはAndroid端末の設定から広告に関する設定を
-        管理できる場合があります。
+        ユーザーは、
+        Android端末の設定等から、
+        広告IDのリセット、削除、
+        広告に関する設定その他の
+        利用可能な設定を管理できる場合があります。
       </p>
     </section>
 
+
     <section>
-      <h2>7. 第三者への情報提供</h2>
+      <h2>7. PRO機能について</h2>
 
       <p>
-        NEIDSは、ユーザーが本アプリ内で入力したスコア、
-        オーダー、チーム情報などをNEIDSのサーバーを通じて
-        第三者へ販売または提供することはありません。
+        本アプリでは、
+        一部の追加機能をPRO機能として
+        提供する場合があります。
       </p>
 
       <p>
-        ただし、本アプリに組み込まれたGoogle Mobile Ads SDK等の
-        第三者サービスが、そのサービスの提供に必要な情報を
-        取得、処理または共有する場合があります。
+        PRO機能には、
+        広告の視聴によって一定時間利用可能となる機能や、
+        アプリ内購入によって継続的に
+        利用可能となる機能が含まれる場合があります。
       </p>
 
       <p>
-        また、法令に基づき情報の開示が必要となる場合には、
+        PRO機能の対象範囲、
+        利用条件、解放時間、
+        販売条件その他の詳細については、
+        本アプリ内に表示される内容が適用されます。
+      </p>
+    </section>
+
+
+    <section>
+      <h2>8. アプリ内購入について</h2>
+
+      <p>
+        本アプリでは、
+        PRO機能、広告非表示その他の
+        追加機能を提供するため、
+        Google Playの課金システム
+        （Google Play Billing）を利用した
+        アプリ内購入を提供する場合があります。
+      </p>
+
+      <p>
+        本アプリでは、
+        一回限りの購入によって
+        対応するPRO機能を継続的に利用できる
+        買い切り型の商品を提供する場合があります。
+      </p>
+
+      <p>
+        商品内容および価格は、
+        Google Playまたは本アプリ内に
+        表示される最新の情報が適用されます。
+      </p>
+
+      <p>
+        価格は、
+        地域、税金、為替、
+        Google Playの価格設定その他の事情により
+        変更される場合があります。
+      </p>
+
+      <h3>決済情報について</h3>
+
+      <p>
+        アプリ内購入に関する決済処理は、
+        Google Playを通じて行われます。
+      </p>
+
+      <p>
+        NEIDSが、
+        ユーザーのクレジットカード番号、
+        デビットカード番号、
+        銀行口座情報その他の
+        決済手段に関する情報を
+        直接取得または保存することはありません。
+      </p>
+
+      <h3>購入状態の確認について</h3>
+
+      <p>
+        本アプリは、
+        購入済み商品の確認、
+        PRO機能の有効化、
+        重複購入の防止、
+        購入状態の確認および
+        購入の復元等の目的で、
+        Google Playから提供される
+        商品情報や購入状態に関する情報を
+        利用する場合があります。
+      </p>
+
+      <h3>購入の復元について</h3>
+
+      <p>
+        対応する買い切り型商品については、
+        Google Play上の購入状態を確認することにより、
+        同一のGoogleアカウント等の条件を満たす場合に、
+        購入済み機能を復元できる場合があります。
+      </p>
+
+      <p>
+        Google Playにおける購入、
+        決済および購入情報の取り扱いについては、
+        Googleが定めるプライバシーポリシーおよび
+        Google Playの利用条件が適用されます。
+      </p>
+
+      <p>
+        <a
+          href="https://play.google.com/about/play-terms/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Play 利用規約
+        </a>
+      </p>
+    </section>
+
+
+    <section>
+      <h2>9. 第三者への情報提供</h2>
+
+      <p>
+        NEIDSは、
+        ユーザーが本アプリ内で入力した
+        スコア、オーダー、チーム情報、
+        選手情報、試合記録、選手成績等を、
+        NEIDSが管理するサーバーを通じて
+        第三者へ販売することはありません。
+      </p>
+
+      <p>
+        ただし、
+        本アプリに組み込まれた第三者サービスが、
+        各サービスの提供、
+        広告配信、分析、
+        不正行為防止、セキュリティ、
+        アプリ内購入等のために
+        必要な情報を取得、処理または
+        共有する場合があります。
+      </p>
+
+      <p>
+        また、
+        法令、裁判所、行政機関その他の
+        法的な要請に基づいて
+        情報の開示が必要となる場合には、
+        適用される法令に従い、
         必要な範囲で情報を開示する場合があります。
       </p>
     </section>
 
+
     <section>
-      <h2>8. データの安全管理</h2>
+      <h2>10. データの安全管理</h2>
 
       <p>
-        本アプリでは、ユーザーが入力したスコアやオーダーなどの
-        主要なアプリデータについて、原則として端末内で
-        処理・保存する設計としています。
+        本アプリでは、
+        ユーザーが入力・作成した
+        スコア、オーダー、
+        試合情報、選手情報、
+        選手成績等の主要なアプリデータについて、
+        原則として端末内で処理・保存する設計としています。
       </p>
 
       <p>
+        Google Mobile Ads SDKその他の
         第三者サービスへ送信される情報については、
-        各サービス提供者のセキュリティ対策および
-        プライバシーポリシーに基づいて処理されます。
+        各サービス提供者の
+        セキュリティ対策および
+        プライバシーポリシー等に基づいて処理されます。
+      </p>
+
+      <p>
+        Google Mobile Ads SDK等によって
+        外部へ送信される対応データについては、
+        通信時に暗号化された接続が
+        利用されます。
+      </p>
+
+      <p>
+        ただし、
+        インターネット通信または
+        電子データの保存について、
+        完全な安全性を保証することはできません。
       </p>
     </section>
 
+
     <section>
-      <h2>9. データの保存および削除</h2>
+      <h2>11. データの保存および削除</h2>
 
       <p>
-        本アプリ内で作成・保存された試合情報、スコア、
-        オーダーなどのデータは、原則としてユーザーの端末内に保存されます。
+        本アプリ内で作成または保存された
+        試合情報、スコア、
+        オーダー、選手情報、
+        選手成績、設定等のデータは、
+        原則としてユーザーの端末内に保存されます。
       </p>
 
       <p>
-        ユーザーは、端末のアプリデータ削除機能や
-        本アプリのアンインストールなどにより、
-        端末内に保存された本アプリのデータを削除できます。
+        ユーザーは、
+        本アプリに用意された削除機能、
+        Android端末のアプリデータ削除機能、
+        または本アプリのアンインストール等により、
+        端末内に保存された
+        本アプリのデータを削除することができます。
       </p>
 
       <p>
-        本アプリではユーザーアカウントを作成する機能を提供していないため、
-        NEIDSが管理するユーザーアカウントおよび
-        アカウントに紐づく個人データはありません。
+        本アプリでは、
+        ユーザー自身がNEIDSの管理する
+        独自アカウントを作成する機能を
+        現時点では提供していません。
       </p>
 
       <p>
-        Google Mobile Ads SDK等の第三者サービスによって取得された情報の
-        保存期間および削除については、
-        各サービス提供者のポリシーが適用されます。
+        そのため、
+        NEIDSが独自に管理する
+        ユーザーアカウントに紐づいた
+        個人データは現時点ではありません。
+      </p>
+
+      <p>
+        Google Mobile Ads SDK、
+        Google Play Billingその他の
+        第三者サービスによって
+        取得または処理された情報については、
+        各サービス提供者の
+        データ保持および削除方針が適用されます。
       </p>
     </section>
 
-    <section>
-      <h2>10. 子どものプライバシー</h2>
-
-      <p>
-        本アプリは、13歳未満の子どもを主な対象として
-        設計されたアプリではありません。
-      </p>
-
-      <p>
-        本アプリでは、ユーザーの年齢、住所、電話番号、
-        メールアドレスなどをアカウント登録情報として
-        NEIDSが収集する機能を提供していません。
-      </p>
-
-      <p>
-        広告の表示については、対象ユーザーおよび適用される法令、
-        Google PlayおよびGoogle AdMobのポリシーに従い、
-        必要な措置を講じます。
-      </p>
-    </section>
 
     <section>
-      <h2>11. 外部サービス</h2>
+      <h2>12. バックアップ、エクスポートおよびインポート</h2>
 
       <p>
-        本アプリでは、以下の第三者サービスを利用します。
+        本アプリでは、
+        ユーザーが本アプリ内のデータを
+        ファイルとしてエクスポート、
+        バックアップ、
+        インポートまたは復元する機能を
+        提供する場合があります。
+      </p>
+
+      <p>
+        エクスポートまたはバックアップされたファイルには、
+        以下のような情報が含まれる場合があります。
       </p>
 
       <ul>
-        <li>Google AdMob</li>
-        <li>Google Mobile Ads SDK</li>
+        <li>試合情報</li>
+        <li>スコア</li>
+        <li>チーム情報</li>
+        <li>選手情報</li>
+        <li>オーダー情報</li>
+        <li>選手成績</li>
+        <li>設定情報</li>
+        <li>その他、本アプリ内に保存されている対応データ</li>
       </ul>
 
       <p>
-        これらのサービスにおける情報の取り扱いについては、
-        各サービス提供者が定めるプライバシーポリシーが適用されます。
+        エクスポートされたファイルの
+        保存場所、送信先、共有先、
+        バックアップ先および管理については、
+        ユーザー自身で適切に管理してください。
+      </p>
+
+      <p>
+        ユーザー自身の操作によって
+        作成・共有されたバックアップファイル等が、
+        NEIDSが管理するサーバーを
+        自動的に経由することはありません。
       </p>
     </section>
 
+
     <section>
-      <h2>12. 本プライバシーポリシーの変更</h2>
+      <h2>13. PDFおよび共有機能</h2>
 
       <p>
-        本アプリの機能追加、使用するサービスの変更、
-        法令またはGoogle Playポリシーの変更等に伴い、
-        本プライバシーポリシーを変更する場合があります。
+        本アプリでは、
+        試合結果その他の対応情報を
+        PDF等の形式で出力または共有できる
+        機能を提供する場合があります。
       </p>
 
       <p>
-        重要な変更がある場合には、本ページまたは
-        本アプリ内など適切な方法で告知します。
+        PDFその他の出力データには、
+        ユーザーが本アプリ内に入力・保存した
+        試合情報、チーム情報、
+        選手名、スコア等が
+        含まれる場合があります。
       </p>
 
       <p>
-        変更後のプライバシーポリシーは、
-        本ページに掲載した時点から適用されます。
+        作成したPDFその他のファイルを
+        第三者へ共有した場合、
+        共有先の第三者がその内容を
+        閲覧できる可能性があります。
+      </p>
+
+      <p>
+        ファイルの共有先および共有範囲については、
+        ユーザー自身で適切に管理してください。
       </p>
     </section>
 
+
     <section>
-      <h2>13. お問い合わせ</h2>
+      <h2>14. 子どものプライバシー</h2>
 
       <p>
-        本プライバシーポリシーまたは本アプリにおける
-        プライバシーの取り扱いに関するお問い合わせは、
-        以下までお願いいたします。
+        本アプリは、
+        13歳未満の子どもを
+        主な対象として設計されたアプリではありません。
       </p>
 
       <p>
-        開発・運営：NEIDS
+        本アプリでは、
+        ユーザーの年齢、
+        住所、電話番号、
+        メールアドレス等を
+        本アプリ独自のアカウント登録情報として
+        NEIDSが収集する機能を
+        現時点では提供していません。
       </p>
 
       <p>
-        メールアドレス：
-        <a href="mailto:middle.smoker@gmail.com">
-          middle.smoker@gmail.com
+        広告の表示については、
+        対象ユーザー、
+        適用される法令、
+        Google Playおよび
+        Google AdMobのポリシーに従って、
+        必要な対応を行います。
+      </p>
+    </section>
+
+
+    <section>
+      <h2>15. 外部サービス</h2>
+
+      <p>
+        本アプリでは、
+        以下の第三者サービスを
+        利用する場合があります。
+      </p>
+
+      <ul class="service-list">
+        <li>Google AdMob</li>
+        <li>Google Mobile Ads SDK</li>
+        <li>Google Play</li>
+        <li>Google Play Billing</li>
+      </ul>
+
+      <p>
+        これらのサービスにおける
+        情報の取得、利用、共有、
+        保存および削除については、
+        各サービス提供者が定める
+        プライバシーポリシーおよび
+        利用規約等が適用されます。
+      </p>
+
+      <p>
+        Google プライバシーポリシー：
+        <br>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://policies.google.com/privacy
+        </a>
+      </p>
+
+      <p>
+        Google Play 利用規約：
+        <br>
+        <a
+          href="https://play.google.com/about/play-terms/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://play.google.com/about/play-terms/
         </a>
       </p>
     </section>
 
-    <footer class="footer">
+
+    <section>
+      <h2>16. 将来的な機能追加について</h2>
+
+      <p>
+        本アプリでは、
+        今後のアップデートにより、
+        新しい機能、広告形式、
+        PRO機能、課金方式、
+        外部サービス等を
+        追加または変更する場合があります。
+      </p>
+
+      <p>
+        新しい機能等によって
+        本プライバシーポリシーの内容に
+        重要な変更が必要となる場合には、
+        本プライバシーポリシーを
+        適切に更新します。
+      </p>
+    </section>
+
+
+    <section>
+      <h2>17. 本プライバシーポリシーの変更</h2>
+
+      <p>
+        本アプリの機能追加、
+        利用するサービスの変更、
+        広告方式の変更、
+        課金方式の変更、
+        法令、Google Playポリシー、
+        Google AdMobポリシーその他の
+        関連規則の変更等に伴い、
+        本プライバシーポリシーを
+        変更する場合があります。
+      </p>
+
+      <p>
+        重要な変更がある場合には、
+        本ページ、本アプリ内、
+        Google Playの掲載情報その他の
+        適切な方法で告知する場合があります。
+      </p>
+
+      <p>
+        変更後のプライバシーポリシーは、
+        本ページに掲載された時点から
+        適用されます。
+      </p>
+    </section>
+
+
+    <section>
+      <h2>18. お問い合わせ</h2>
+
+      <p>
+        本プライバシーポリシーまたは
+        本アプリにおける
+        プライバシーの取り扱いに関する
+        お問い合わせは、
+        以下までお願いいたします。
+      </p>
+
+      <div class="note">
+        <p>
+          開発・運営：NEIDS
+        </p>
+
+        <p>
+          メールアドレス：
+          <a href="mailto:middle.smoker@gmail.com">
+            middle.smoker@gmail.com
+          </a>
+        </p>
+      </div>
+    </section>
+
+
+    <footer>
       © 2026 NEIDS. All rights reserved.
     </footer>
 
